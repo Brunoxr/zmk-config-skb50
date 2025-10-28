@@ -1,0 +1,11 @@
+config SHIELD_SKB50_DONGLE
+    def_bool $(shields_list_contains,skb50_dongle)
+
+config SHIELD_SKB50_LEFT
+    def_bool $(shields_list_contains,skb50_left)
+
+config SHIELD_SKB50_RIGHT
+    def_bool $(shields_list_contains,skb50_right)
+
+config SHIELD_SKB50_NUMPAD
+    def_bool $(shields_list_contains,skb50_numpad)

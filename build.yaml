@@ -16,10 +16,22 @@
 #     snippet: studio-rpc-usb-uart
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
-#
+#   
+#     https://github.com/joaopedropio/zmk-swoop/blob/main/config/boards/shields/swoop/central_dongle.overlay
+#     https://www.youtube.com/watch?v=O_urj-rF3bQ&t=447s
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: sofle_left
+    shield: skb50_left
   - board: seeeduino_xiao_ble
-    shield: sofle_right
+    shield: skb50_right
+  - board: seeeduino_xiao_ble
+    shield: skb50_numpad
+    artifact-name: numpad_firmware
+  - board: seeeduino_xiao_ble
+    shield: central_dongle
+    cmake-args: -DCONFIG_ZMK_DONGLE=y
+    artifact-name: dongle_firmware
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+    artifact-name: settings_reset_firmware
