@@ -17,7 +17,11 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #   
+#     Referêcnias:
 #     https://github.com/joaopedropio/zmk-swoop/blob/main/config/boards/shields/swoop/central_dongle.overlay
+#     https://github.com/aroum/zmk-enki42-dongle/tree/N!N_v2?tab=readme-ov-file
+#     https://github.com/BertPlasschaert/zmk-config-totem-dongle/tree/main
+#     https://github.com/BertPlasschaert/zmk-config-totem-dongle
 #     https://www.youtube.com/watch?v=O_urj-rF3bQ&t=447s
 ---
 include:
